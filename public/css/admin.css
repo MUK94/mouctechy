@@ -1,0 +1,125 @@
+html {
+    font-size: 80.5%
+}
+
+.dashboard {
+    margin-top: 2rem;
+    padding: 0 10rem;
+}
+.dashboard .container{
+    display: grid;
+    grid-template-columns: 13rem auto;
+    padding: 1rem 0;
+    /*height: 100vh;*/
+}
+
+.dashboard .container .sidebar {
+    grid-row: 1;
+    /*height: 50%;*/
+    background-color: #f4f4f4;
+    padding: 0.25rem 1rem;
+    color: red;
+    border-radius: var(--border-rad);
+    box-shadow: var(--boxShadow2);
+}
+
+.dashboard .container .sidebar .side__item{
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/* display projects */
+
+.display-projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: var(--color1);
+    color: #f4f4f4;
+}
+
+.project-row table {
+    width: 100%;
+    border: none;
+}
+
+.project-row thead th{
+    font-size: var(--heading4);
+    padding-bottom: 1rem;
+}
+
+.project-row .box td{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.project-row .box {
+    background-color: rgba(236, 236, 239, 0.8);
+}
+
+.project-row .box td button {
+    background: none;
+    border: none;
+}
+
+/* Create form */
+
+.create-form {
+    margin-top: 2rem;
+}
+
+.create-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.create-form form input,
+.create-form form textarea {
+    border: 1px solid #bbb;
+    border-radius: var(--border-rad);
+    padding: 0.25rem 1rem ;
+    font-size: inherit;
+}
+
+.create-form form input{
+    height: 40px;
+}
+
+.create-form form textarea {
+    height: 90px;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+.create-form form input::placeholder,
+.create-form form textarea::placeholder {
+    font-family: 'Exo', sans-serif;
+}
+
+.create-form form .submit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.create-form form .submit input {
+    border: none;
+    padding: 0;
+    border-radius: unset;
+}
+
+.create-form form .submit button {
+    padding: 0.2rem 0.75rem;
+    background: none;
+    border: none;
+    background-color: var(--color1);
+    border-radius: var(--border-rad);
+    color: #bbb;
+    font-family: inherit;
+    cursor: pointer;
+}
